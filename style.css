@@ -496,6 +496,7 @@ footer {
   #activités {
     width: 100%;
     margin-top: 30px;
+    backgroud-color:white;
   }
 
   #activités .twoCardsContainer .card {
