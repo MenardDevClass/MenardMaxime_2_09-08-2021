@@ -2,7 +2,7 @@ style.css
 
 
 
-/* Application de la police pour tout le body */
+
 
 html{
   font-family: Raleway, Arial, Times New Roman;
@@ -12,7 +12,7 @@ body {
   font-family: "Raleway"
 }
 
-/* Container pour appliquer une marge à l'ensemble du document sauf au footer */
+
 #blockprincipal {
   margin: 0 40px;
 }
@@ -26,7 +26,7 @@ img {
   object-fit: cover;
 }
 
-/* ************************ HEADER ******************** */
+    /*                         HEADER                          */
 header {
   display: flex;
   justify-content: flex-end;
@@ -166,7 +166,7 @@ input::placeholder {
   display: none;
 }
 
-/* ********************** FILTRES ********************** */
+/*                                  FILTRES                              */
 #filters {
   display: flex;
   align-items: center;
@@ -218,7 +218,7 @@ input::placeholder {
 
 
 
-/* ******************** INFORMATION ************* */
+/*                              INFORMATION                      */
 #information {
   display: flex;
   align-items: center;
@@ -238,7 +238,7 @@ input::placeholder {
   border: 1px solid #F2F2F2;
 }
 
-/* ****************** MAIN *************************** */
+/*                       MAIN                             */
 main {
   display: flex;
   justify-content: space-between;
@@ -352,7 +352,7 @@ section {
   margin-left: 10px;
 }
 
-/* **************** activités ********************** */
+/*                         activités                       */
 #activités {
   margin-top: 50px;
   padding: 0;
@@ -422,7 +422,7 @@ section {
   height: 20%;
 }
 
-/* **************** FOOTER *************** */
+/*                           FOOTER                   */
 footer {
   margin-top: 50px;
   padding: 40px 280px 40px 40px;
@@ -437,9 +437,9 @@ footer {
   line-height: 50px;
 }
 
-/* ******************* RESPONSIVE ********************* */
+/*                                 RESPONSIVE                                */
 
-/* ******************** < 1040px *********************** */
+/*                   < 1040px                             */
 
 @media (max-width: 1040px) {
   #blockprincipal {
@@ -551,7 +551,7 @@ footer {
   }
 }
 
-/* ********************** < 881px ************************* */
+/*                       < 881px                       */
 @media (max-width: 881px) {
   main {
     width: 100%;
@@ -590,7 +590,7 @@ footer {
   }
 }
 
-/* ************************ < 670px *********************** */
+/*                     < 670px                       */
 @media (max-width: 670px) {
   #blockprincipal {
     margin: 0;
@@ -671,7 +671,7 @@ footer {
   }
 }
 
-/* ********************* < 510px ********************* */
+/*                        510px                       */
 @media (max-width: 509px) {
   button {
     border-radius: 10px;
