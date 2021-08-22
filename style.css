@@ -8,12 +8,12 @@ style.css
   src: url("./Policy/static/Raleway-Regular.ttf");
 }
 
-
+/* Application de la police pour tout le body */
 body {
   font-family: "Raleway"
 }
 
-
+/* Container pour appliquer une marge à l'ensemble du document sauf au footer */
 #blockprincipal {
   margin: 0 40px;
 }
@@ -27,7 +27,7 @@ img {
   object-fit: cover;
 }
 
-
+/* ************************ HEADER ******************** */
 header {
   display: flex;
   justify-content: flex-end;
@@ -167,31 +167,32 @@ input::placeholder {
   display: none;
 }
 
-
-#filtres {
+/* ********************** FILTRES ********************** */
+#filters {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
 
-.filtreclasse {
+.filterclass {
   display: flex;
   align-items: center;
 }
 
 
-#filtreclasse {
+#filterclass {
   display: flex;
   margin-left: 20px;
 }
 
 
-.filtreclasse:hover {
-  cursor: not-allowed;
+.filterclass:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
 }
 
-.filtreclasse h3 {
+.filterclass h3 {
   position: relative;
   right: 20px;
   padding: 8px 15px 8px 25px;
@@ -202,7 +203,7 @@ input::placeholder {
   font-size: 0.9rem;
 }
 
-.filtreclasse i {
+.filterclass i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,7 +219,7 @@ input::placeholder {
 
 
 
-
+/* ******************** INFORMATION ************* */
 #information {
   display: flex;
   align-items: center;
@@ -238,7 +239,7 @@ input::placeholder {
   border: 1px solid #F2F2F2;
 }
 
-
+/* ****************** MAIN *************************** */
 main {
   display: flex;
   justify-content: space-between;
@@ -341,7 +342,7 @@ section {
   height: 100%;
   width: 40%;
   border-radius: 15px 0 0 15px;
-}
+
 
 #pluspopulaires .cardText {
   display: flex;
@@ -352,7 +353,7 @@ section {
   margin-left: 10px;
 }
 
-
+/* **************** activités ********************** */
 #activités {
   margin-top: 50px;
   padding: 0;
@@ -424,7 +425,7 @@ section {
   height: 20%;
 }
 
-
+/* **************** FOOTER *************** */
 footer {
   margin-top: 50px;
   padding: 40px 280px 40px 40px;
@@ -439,7 +440,9 @@ footer {
   line-height: 50px;
 }
 
+/* ******************* RESPONSIVE ********************* */
 
+/* ******************** < 1040px *********************** */
 
 @media (max-width: 1040px) {
   #blockprincipal {
@@ -475,7 +478,10 @@ footer {
   #pluspopulaires{
     width: 100%;
   }
-
+.filterclass:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+}
   #pluspopulairesCardsContainer {
     flex-direction: row;
     justify-content: space-between;
@@ -548,7 +554,7 @@ footer {
   }
 }
 
-
+/* ********************** < 881px ************************* */
 @media (max-width: 881px) {
   main {
     width: 100%;
@@ -558,17 +564,20 @@ footer {
     align-items: initial;
   }
 
-   #filtersType {
+   #filterclass {
     flex-wrap: wrap;
     margin: 0;
   }
-
+.filterclass:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+}
   #filters {
     flex-direction: column;
     align-items: initial;
   }
  
-  .filtersType {
+  .filterclass {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -584,7 +593,7 @@ footer {
   }
 }
 
-
+/* ************************ < 670px *********************** */
 @media (max-width: 670px) {
   #blockprincipal {
     margin: 0;
@@ -605,7 +614,10 @@ footer {
     height: 60%;
     width: 50%;
   }
-
+.filterclass:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+}
   #logo img {
     height: 60%;
   }
@@ -629,13 +641,13 @@ footer {
   .nav:hover {
     border-top: none;
     border-bottom: 1px solid #DEEBFF;
-
+    /* Evite le décalage du text du à la bordure */
     top: 1px;
   }
 
   .bleu:hover {
     border: none;
-    
+    /* Evite le décalage du text du à la bordure */
     bottom: 1px !important;
   }
 
@@ -662,7 +674,7 @@ footer {
   }
 }
 
-
+/* ********************* < 510px ********************* */
 @media (max-width: 509px) {
   button {
     border-radius: 10px;
@@ -672,6 +684,12 @@ footer {
     display: none;
   }
 
+
+
+.filterclass:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+}
   #searchicon {
     display: block;
   }
@@ -688,10 +706,17 @@ footer {
   .oneCardContainer .cardText {
     justify-content: initial;
   }
+    #accommodations {
+    width: 100%;
+    padding: 30px 15px;
+    margin-top: 20px;
+    order: 2;
+    background-color: white;
+  }
 
   footer,
   .footerContent {
     align-items: initial;
     padding-top: 10px;
+
   }
-}
