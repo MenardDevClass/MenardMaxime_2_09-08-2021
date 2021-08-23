@@ -1,7 +1,10 @@
 style.css
 
 
-
+@font-face{
+  font-family: "Raleway";
+src: url("https://fonts.google.com/specimen/Raleway");
+}
 
 
 html{
@@ -183,23 +186,44 @@ input::placeholder {
 #filterclass {
   display: flex;
   margin-left: 20px;
+  
 }
 
 
-.filterclass:hover {
+#heco:hover {
   background-color: #DEEBFF;
   border-radius: 20px;
+
+}
+
+#hfamille:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hroman:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hanimaux:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
 }
 
 .filterclass h3 {
   position: relative;
   right: 20px;
   padding: 8px 15px 8px 25px;
-  border: 3px solid #F2F2F2;
+ border: 3px solid #F2F2F2;
   border-radius: 0 20px 20px 0;
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: 0.9rem;
+
 }
 
 .filterclass i {
@@ -215,6 +239,8 @@ input::placeholder {
   z-index: 2;
   border: 4px solid #F2F2F2;
 }
+
+
 
 
 
