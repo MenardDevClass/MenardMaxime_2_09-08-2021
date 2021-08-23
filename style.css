@@ -1,11 +1,13 @@
 style.css
 
 
+
+/* Application de la police pour tout le body */
+
 @font-face{
   font-family: "Raleway";
 src: url("https://fonts.google.com/specimen/Raleway");
 }
-
 
 html{
   font-family: Raleway, Arial, Times New Roman;
@@ -15,7 +17,7 @@ body {
   font-family: "Raleway"
 }
 
-
+/* Container pour appliquer une marge à l'ensemble du document sauf au footer */
 #blockprincipal {
   margin: 0 40px;
 }
@@ -29,12 +31,13 @@ img {
   object-fit: cover;
 }
 
-    /*                         HEADER                          */
+/* ************************ HEADER ******************** */
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 75px;
+    font-family: Raleway, Arial, Times New Roman;
 }
 
 
@@ -91,7 +94,7 @@ nav {
 }
 
 #hébergements:hover  {
-  border-top: 1px solid #0065fc;
+  border-top: 2px solid #0065fc;
   position: relative;
   bottom: 1px;
   
@@ -99,22 +102,12 @@ nav {
 
 
 
- .nav:hover {
-    border-top: 1px solid #0065fc;
-    border-bottom: 1px solid #0065fc;
-    top: 1px;
-  }
-
-  .bleu:hover {
-    border-top: 1px solid #0065fc;
-    border-bottom: 1px solid #0065fc;
-    border: none;
-    bottom: 1px !important;
-  }
-
-.bleu {
-  color: #0065FC;
-  font-weight: 900;
+.nav:hover {
+  border-top: 2px solid #0065fc;
+  position: relative;
+  bottom: 1px;
+  color: #0065fc;
+  font
 }
 
 #inscription {
@@ -124,7 +117,10 @@ nav {
 }
 
 
-
+.bleu {
+  color: #0065FC;
+  font-weight: 900;
+}
 
 
 
@@ -177,7 +173,7 @@ input::placeholder {
   display: none;
 }
 
-/*                                  FILTRES                              */
+/* ********************** FILTRES ********************** */
 #filters {
   display: flex;
   align-items: center;
@@ -250,9 +246,7 @@ input::placeholder {
 
 
 
-
-
-/*                              INFORMATION                      */
+/* ******************** INFORMATION ************* */
 #information {
   display: flex;
   align-items: center;
@@ -272,7 +266,7 @@ input::placeholder {
   border: 1px solid #F2F2F2;
 }
 
-/*                       MAIN                             */
+/* ****************** MAIN *************************** */
 main {
   display: flex;
   justify-content: space-between;
@@ -386,7 +380,7 @@ section {
   margin-left: 10px;
 }
 
-/*                         activités                       */
+/* **************** activités ********************** */
 #activités {
   margin-top: 50px;
   padding: 0;
@@ -456,7 +450,7 @@ section {
   height: 20%;
 }
 
-/*                           FOOTER                   */
+/* **************** FOOTER *************** */
 footer {
   margin-top: 50px;
   padding: 40px 280px 40px 40px;
@@ -471,9 +465,9 @@ footer {
   line-height: 50px;
 }
 
-/*                                 RESPONSIVE                                */
+/* ******************* RESPONSIVE ********************* */
 
-/*                   < 1040px                             */
+/* ******************** < 1040px *********************** */
 
 @media (max-width: 1040px) {
   #blockprincipal {
@@ -481,6 +475,8 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+
+
 
   header {
     width: 100%;
@@ -509,9 +505,74 @@ footer {
   #pluspopulaires{
     width: 100%;
   }
-.filterclass:hover {
+#filters {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.filterclass {
+  display: flex;
+  align-items: center;
+}
+
+
+#filterclass {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+
+#heco:hover {
   background-color: #DEEBFF;
   border-radius: 20px;
+
+}
+
+#hfamille:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hroman:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hanimaux:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+.filterclass h3 {
+  position: relative;
+  right: 20px;
+  padding: 8px 15px 8px 25px;
+ border: 3px solid #F2F2F2;
+  border-radius: 0 20px 20px 0;
+  white-space: nowrap;
+  margin-right: -20px;
+  font-size: 0.9rem;
+
+}
+
+.filterclass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065FC;
+  width: 32px;
+  height: 32px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  z-index: 2;
+  border: 4px solid #F2F2F2;
 }
   #pluspopulairesCardsContainer {
     flex-direction: row;
@@ -585,7 +646,7 @@ footer {
   }
 }
 
-/*                       < 881px                       */
+/* ********************** < 881px ************************* */
 @media (max-width: 881px) {
   main {
     width: 100%;
@@ -595,23 +656,75 @@ footer {
     align-items: initial;
   }
 
-   #filterclass {
-    flex-wrap: wrap;
-    margin: 0;
-  }
-.filterclass:hover {
+#filters {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.filterclass {
+  display: flex;
+  align-items: center;
+}
+
+
+#filterclass {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+
+#heco:hover {
   background-color: #DEEBFF;
   border-radius: 20px;
+
 }
-  #filters {
-    flex-direction: column;
-    align-items: initial;
-  }
- 
-  .filterclass {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+
+#hfamille:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hroman:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hanimaux:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+.filterclass h3 {
+  position: relative;
+  right: 20px;
+  padding: 8px 15px 8px 25px;
+ border: 3px solid #F2F2F2;
+  border-radius: 0 20px 20px 0;
+  white-space: nowrap;
+  margin-right: -20px;
+  font-size: 0.9rem;
+
+}
+
+.filterclass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065FC;
+  width: 32px;
+  height: 32px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  z-index: 2;
+  border: 4px solid #F2F2F2;
+}
   #pluspopulairesCardsContainer {
     flex-direction: column;
     width: 100%;
@@ -624,7 +737,7 @@ footer {
   }
 }
 
-/*                     < 670px                       */
+/* ************************ < 670px *********************** */
 @media (max-width: 670px) {
   #blockprincipal {
     margin: 0;
@@ -645,9 +758,74 @@ footer {
     height: 60%;
     width: 50%;
   }
-.filterclass:hover {
+#filters {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.filterclass {
+  display: flex;
+  align-items: center;
+}
+
+
+#filterclass {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+
+#heco:hover {
   background-color: #DEEBFF;
   border-radius: 20px;
+
+}
+
+#hfamille:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hroman:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hanimaux:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+.filterclass h3 {
+  position: relative;
+  right: 20px;
+  padding: 8px 15px 8px 25px;
+ border: 3px solid #F2F2F2;
+  border-radius: 0 20px 20px 0;
+  white-space: nowrap;
+  margin-right: -20px;
+  font-size: 0.9rem;
+
+}
+
+.filterclass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065FC;
+  width: 32px;
+  height: 32px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  z-index: 2;
+  border: 4px solid #F2F2F2;
 }
   #logo img {
     height: 60%;
@@ -670,15 +848,13 @@ footer {
   }
 
   .nav:hover {
-    border-top: none;
-    border-bottom: 1px solid #DEEBFF;
-    /* Evite le décalage du text du à la bordure */
+    border-top: 1px solid #0065fc;
+    border-bottom: 1px solid #0065fc;
     top: 1px;
   }
 
   .bleu:hover {
     border: none;
-    /* Evite le décalage du text du à la bordure */
     bottom: 1px !important;
   }
 
@@ -705,7 +881,7 @@ footer {
   }
 }
 
-/*                        510px                       */
+/* ********************* < 510px ********************* */
 @media (max-width: 509px) {
   button {
     border-radius: 10px;
@@ -716,12 +892,78 @@ footer {
   }
 
 
-.filterclass:hover {
+#filters {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.filterclass {
+  display: flex;
+  align-items: center;
+}
+
+
+#filterclass {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+
+#heco:hover {
   background-color: #DEEBFF;
   border-radius: 20px;
+
+}
+
+#hfamille:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hroman:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+#hanimaux:hover {
+  background-color: #DEEBFF;
+  border-radius: 20px;
+
+}
+
+.filterclass h3 {
+  position: relative;
+  right: 20px;
+  padding: 8px 15px 8px 25px;
+ border: 3px solid #F2F2F2;
+  border-radius: 0 20px 20px 0;
+  white-space: nowrap;
+  margin-right: -20px;
+  font-size: 0.9rem;
+
+}
+
+.filterclass i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065FC;
+  width: 32px;
+  height: 32px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  z-index: 2;
+  border: 4px solid #F2F2F2;
 }
   #searchicon {
     display: block;
+    
   }
   .twoCardsContainer {
     flex-direction: column;
