@@ -452,6 +452,7 @@ footer {
   display: flex;
   flex-direction: column;
   line-height: 50px;
+  font-family: Raleway, Arial, Times New Roman;
 }
 
 /* ******************* RESPONSIVE ********************* */
