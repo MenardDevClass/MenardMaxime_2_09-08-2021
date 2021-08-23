@@ -107,6 +107,7 @@ nav {
 
   .bleu:hover {
     border-top: 1px solid #0065fc;
+    border-bottom: 1px solid #0065fc;
     border: none;
     bottom: 1px !important;
   }
