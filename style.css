@@ -91,7 +91,7 @@ nav {
 }
 
 #hébergements:hover  {
-  border-top: 2px solid #DEEBFF;
+  border-top: 1px solid #0065fc;
   position: relative;
   bottom: 1px;
   
@@ -100,12 +100,13 @@ nav {
 
 
  .nav:hover {
-    border-top: none;
-    border-bottom: 1px solid #DEEBFF;
+    border-top: 1px solid #0065fc;
+    border-bottom: 1px solid #0065fc;
     top: 1px;
   }
 
   .bleu:hover {
+    border-top: 1px solid #0065fc;
     border: none;
     bottom: 1px !important;
   }
