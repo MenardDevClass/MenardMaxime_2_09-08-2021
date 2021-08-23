@@ -110,6 +110,11 @@ nav {
     bottom: 1px !important;
   }
 
+.bleu {
+  color: #0065FC;
+  font-weight: 900;
+}
+
 #inscription {
   display: flex;
   align-items: center;
