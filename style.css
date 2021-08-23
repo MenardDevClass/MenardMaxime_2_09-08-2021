@@ -4,13 +4,10 @@ style.css
 
 /* Application de la police pour tout le body */
 
-@font-face{
-  font-family: "Raleway";
-src: url("https://fonts.google.com/specimen/Raleway");
-}
+
 
 body {
-  font-family: raleway;
+  font-family: "raleway";
   
 }
 
