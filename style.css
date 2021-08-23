@@ -445,14 +445,14 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #F2F2F2;
-  font-family: Raleway, Arial, Times New Roman;
+  font-family: "Raleway" , sans-serif;
 }
 
 .footerContent {
   display: flex;
   flex-direction: column;
   line-height: 50px;
-  font-family: Raleway, Arial, Times New Roman;
+  font-family: "Raleway" , sans-serif;
 }
 
 /* ******************* RESPONSIVE ********************* */
