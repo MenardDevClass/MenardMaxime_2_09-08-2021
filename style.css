@@ -9,7 +9,10 @@ style.css
 src: url("https://fonts.google.com/specimen/Raleway");
 }
 
-
+body {
+  font-family: raleway;
+  
+}
 
 /* Container pour appliquer une marge à l'ensemble du document sauf au footer */
 #blockprincipal {
