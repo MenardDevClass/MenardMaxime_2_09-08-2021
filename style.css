@@ -6,9 +6,8 @@ style.css
 
 
 
-body {
-  font-family: raleway
-  
+html{
+  font-family: Raleway, Arial, Times New Roman;
 }
 
 /* Container pour appliquer une marge à l'ensemble du document sauf au footer */
