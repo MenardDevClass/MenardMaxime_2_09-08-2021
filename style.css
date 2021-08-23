@@ -445,6 +445,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #F2F2F2;
+  font-family: Raleway, Arial, Times New Roman;
 }
 
 .footerContent {
