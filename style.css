@@ -2,11 +2,12 @@ style.css
 
 
 
-/* Application de la police pour tout le body */
+body {
+  font-family: "Raleway", sans-serif;
+}
 
 #blockprincipal {
   margin: 0 40px;
-  font-family: Raleway, Arial, Times New Roman;
 }
 
 a {
